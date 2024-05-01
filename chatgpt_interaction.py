@@ -4,7 +4,7 @@ def fetch_response(prompt):
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=prompt,
-        max_tokens=150
+        max_tokens=151
     )
     return response.choices[0].text.strip()
 
